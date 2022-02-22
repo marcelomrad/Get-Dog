@@ -2,7 +2,7 @@ const getDog = async (breedId) => {
 
 
     const url = !breedId || breedId === 0
-    ?"https://api.thedogapi.com/v1/images/search"
+    ?"https://api.thedogapi.com/v1/images/search?mime_types=gif"
     :"https://api.thedogapi.com/v1/images/search?breed_ids=" + breedId;
 
 
